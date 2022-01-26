@@ -6,6 +6,7 @@ import axios from 'axios';
 import List from './component/List';
 import UserItem from './component/UserItem';
 import TodoItem from './component/TodoItem';
+import EventsExample from './component/EventsExample';
 
 const App = () => {
 
@@ -49,6 +50,7 @@ const App = () => {
       </Card>
       <List items={users} renderItem={(user: IUser) => <UserItem user={user} key={user.id} />} />
       <List items={todos} renderItem={(todo: ITodo) => <TodoItem todo={todo} key={todo.id} />} />
+      <EventsExample />
   </div>
 
   )
