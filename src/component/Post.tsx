@@ -27,7 +27,7 @@ export const Post: FC = () => {
                 return response.json();
             })
             .then((data) => {
-                console.log(data);
+                setTokken(data)
             });
 
     }
