@@ -42,8 +42,8 @@ const EventsExample: FC = () => {
 
     return (<div>
 
-        <input type="text" value={value} onChange={changeHandler} placeholder='Управляемый'/>
-        <input type="text" ref={inputRef} placeholder='Неуправляемый'/>
+        <input type="text" value={value} onChange={changeHandler} placeholder='Управляемый' />
+        <input type="text" ref={inputRef} placeholder='Неуправляемый' />
         <button onClick={clickHandler}> dfsf </button>
         <div onDrag={dragHandler} draggable style={{ width: 200, height: 200, background: 'red' }}> </div>
         <div

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Card, { cardVariant } from './component/Card';
-import UserList from './component/UserList';
 import { ITodo, IUser } from './types/types';
 import axios from 'axios';
 import List from './component/List';
 import UserItem from './component/UserItem';
 import TodoItem from './component/TodoItem';
 import EventsExample from './component/EventsExample';
+import { Post } from './component/Post';
 
 const App = () => {
 
@@ -45,6 +45,7 @@ const App = () => {
 
   return (
     <div>
+      <Post />
       <Card onClick={(num) => console.log(num)} width='200px' height='200px' variant={cardVariant.primary}>
         <button>Привет</button>
       </Card>
